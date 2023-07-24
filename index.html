@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--js timer-->
+    <script type="text/javascript" src="pomodoro.js"></script>
+        <!--title-->
+        <title>Pomodoro Timer</title>
+        <!--css links-->   
+    <link rel="stylesheet" href="reset.css"/>
+    <link rel="stylesheet" href="stylesheet.css"/>
+        <!--google fonts link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grandiflora+One&display=swap" rel="stylesheet">
+
+</head>
+<body onload="template()">
+    <header>
+        <h1>Pomodoro Timer</h1>  
+        <img src="tomato.svg"/>
+    </header>
+    
+            <section id="done" class="text-center"></section>
+            <!--row minutes-->
+            <div class="row">
+                <!--col minutes-->
+                <div class="col-5">
+                    <h4 id="minutes"></h4>
+                </div>
+                <!--col ":"-->
+                <div class="col-2">
+                    <h4>:</h4>
+                </div>
+                <!--col seconds-->
+                <div class="col-5">
+                    <h4 id="seconds"></h4>
+                </div>
+            </div>
+      
+    
+
+    <!--Buttons-->
+    <div class="container">
+        <!--play button-->
+        
+        <a class="start" onclick="start()">Start</a>
+        <!--update page/reset timer-->
+        <a href="index.html" class="reset">Reset</a>
+   
+    </div>
+    
+</body>
+</html>
